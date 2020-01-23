@@ -12,4 +12,8 @@ public class ChessPiece extends Piece {
         super(board);
         this.color = color;
     }
+
+    public Color getColor() {
+        return color;
+    }
 }
