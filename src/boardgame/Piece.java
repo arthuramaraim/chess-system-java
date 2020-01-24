@@ -1,6 +1,6 @@
 package boardgame;
 
-import Chess.Color;
+
 
 public class Piece {
 
