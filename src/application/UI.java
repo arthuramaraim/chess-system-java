@@ -30,7 +30,7 @@ public class UI {
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
     public static void clearSreen(){
-        System.out.println("\033[H\033[2J");
+       System.out.println("\033[H\033[2J");
         System.out.flush();
 
     }
@@ -42,6 +42,7 @@ public class UI {
             String s = sc.nextLine();
             char column = s.charAt(0);
             int row = Integer.parseInt(s.substring(1));
+
             return new ChessPosition(column, row);
         }catch (RuntimeException e){
             throw new InputMismatchException("Erro ao ler posição do tabuleiro de xadrez");
