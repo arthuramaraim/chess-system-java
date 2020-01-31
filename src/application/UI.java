@@ -1,10 +1,12 @@
 package application;
 
+import Chess.ChessMatch;
 import Chess.ChessPiece;
 import Chess.ChessPosition;
 import Chess.Color;
 import boardgame.BoardException;
 
+import java.sql.SQLOutput;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -49,6 +51,12 @@ public class UI {
         }
 
 
+    }
+    public static void printMatch(ChessMatch chessMatch){
+        printBoard(chessMatch.getPieces());
+        System.out.println();
+        System.out.println("Turn: "+ chessMatch.getTurn());
+        System.out.println("Waiting Player:  " + chessMatch.getCurrentPlayer());
     }
 
 
